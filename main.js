@@ -11,12 +11,14 @@ $(document).ready(function(){
         $('textarea').val('');
     })
     $(document).on('click', 'a', function(){
+        $(this).hide();
         $(this).parent().slideUp(100,function(){
             $(this).remove();
         });
     })
     $(document).on('change', 'input:checkbox', function(){
         var input = $(this).next('span');
+        // input.classList.add('align-middle');
         if (this.checked) {
             $(input).css('textDecoration', 'line-through');
         } else {

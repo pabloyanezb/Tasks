@@ -74,7 +74,7 @@ input{
 }
 
 .tarea a{
-    background-image: url('/Trash.webp');
+    background-image: url('./Trash.webp');
     height: 80px;
     width: 60px;
     background-size: contain;
